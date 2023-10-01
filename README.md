@@ -47,15 +47,20 @@ You can find the Docker image for this repository at:
 
 [sushil3710/gita_bot:latest](https://hub.docker.com/r/sushil3710/gita_bot)
 
+### How to Dockerize Image
+
+To dokerize build and then run, use bash script to build  and run the docker repo after pulling it to local environment
+
+-`./run.sh  or bash run.sh` 
+
 ### How to Host the Docker Image
 
 To host and run the Gita Bot using the Docker image, pull the repo and use the following command:
 
+-`docker pull sushil3710/gita_bot:latest`
 -`docker run -p 8080:80 sushil3710/gita_bot:latest`
 
-Or Use bash script to build  and run the docker repo after pulling it to local environment
 
--`./run.sh  or bash run.sh` 
 
 
 ## Kubernetes manifest files 
