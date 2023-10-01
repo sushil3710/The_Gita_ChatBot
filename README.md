@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Gita ChatBot is an interactive chatbot designed to provide information, answer questions, and engage in conversations related to the Bhagavad Gita, an ancient Hindu scripture. This chatbot is a useful tool for those who want to learn more about the life lessons and philosophy through Bhagavad Gita.
+The Gita ChatBot is an interactive chatbot designed to provide information, answer questions, and engage in conversations related to the Bhagavad Gita, an ancient Hindu scripture. This chatbot is a useful tool for those who want to learn more about life lessons and philosophy through Bhagavad Gita..
 
 ## Requirements
 
@@ -49,10 +49,9 @@ You can find the Docker image for this repository at:
 
 ### How to Host the Docker Image
 
-To host and run the Gita Bot using the Docker image, you can use the following command:
+To host and run the Gita Bot using the Docker image, pull the repo and use the following command:
 
-```bash
-docker run -p 8080:80 sushil3710/gita_bot:latest
+-`docker run -p 8080:80 sushil3710/gita_bot:latest`
 
 
 ## Kubernetes manifest files 
@@ -64,22 +63,21 @@ docker run -p 8080:80 sushil3710/gita_bot:latest
 - `kubectl get deploy -o wide`
 - `kubectl get pod -o wide`
 
-  
-   Use last two commands to get the external Ip address and port number where the docker image will be hosted
+Use last two commands to get the external Ip address and port number where the docker image will be hosted
 
 
 ## Python libraries used
 
-1. chainlit
-2. pypdf
-3. langchain
-4. torch
-5. accelerate
-6. bitsandbytes
-7. transformers
-8. ctransformers
-9. sentence_transformers
-10. faiss_cpu
+-`chainlit`
+-`pypdf`
+-`langchain`
+-`torch`
+-`accelerate`
+-`bitsandbytes`
+-`transformers`
+-`ctransformers`
+-`sentence_transformers`
+-`faiss_cpu`
 
 ## License
 
