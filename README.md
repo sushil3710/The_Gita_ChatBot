@@ -37,11 +37,22 @@ Command Set after moving to the main directory:
 - `python ingest.py`
 - `chainlit run model.py -w`
 
-## Docker File
-This repo has also been dockerized on Docker and the repo is public it can be hosted by anyone
+## Docker Image
 
-1. The repo is sushil3710/gita_bot:latest, use this repo to host and see the results 
-2. This repo can also be pulled to be deployed on local machine
+This repository has been Dockerized, making it easy to run the Gita Bot in a containerized environment. The Docker image is publicly available and can be hosted and used by anyone.
+
+### Docker Image Repository
+
+You can find the Docker image for this repository at:
+
+[sushil3710/gita_bot:latest](https://hub.docker.com/r/sushil3710/gita_bot)
+
+### How to Host the Docker Image
+
+To host and run the Gita Bot using the Docker image, you can use the following command:
+
+```bash
+docker run -p 8080:80 sushil3710/gita_bot:latest
 
 
 ## Kubernetes manifest files 
