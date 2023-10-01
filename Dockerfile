@@ -12,7 +12,7 @@ RUN python -m venv chatbotenv
 RUN chatbotenv/Scripts/activate
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt 
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 RUN python ingest.py
 EXPOSE 8501
 # Run the Bash script to start your chatbot
