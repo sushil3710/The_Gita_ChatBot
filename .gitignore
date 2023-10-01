@@ -1,8 +1,6 @@
-# Ignore specific files
-llama-2-7b-chat.ggmlv3.q8_0.bin
-# Ignore specific directories
+# Ignore specific directories and files
 vectorstore/
 chatbotenv/
 .chainlit
 __pycache__
-
+llama-2-7b-chat.ggmlv3.q8_0.bin
