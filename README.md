@@ -30,11 +30,12 @@ Now to Train the llama2 with The Thagavad Gita and Open the Chatbot run:
    --Interact with the chatbot by typing in your questions or messages related to the Bhagavad Gita.
 
 Command Set after moving to the main directory:
---python -m venv chatbotenv
---chatbotenv\Scripts\activate
---pip install --trusted-host pypi.python.org -r requirements.txt
---python ingest.py
---chainlit run model.py -w 
+- `python -m venv chatbotenv`
+- `chatbotenv\Scripts\activate` (For Windows)
+- `source chatbotenv/bin/activate` (For Linux/macOS)
+- `pip install --trusted-host pypi.python.org -r requirements.txt`
+- `python ingest.py`
+- `chainlit run model.py -w`
 
 ## Docker File
 This repo has also been dockerized on Docker and the repo is public it can be hosted by anyone
@@ -47,10 +48,11 @@ This repo has also been dockerized on Docker and the repo is public it can be ho
 
 1. The Git Repo and Docker image also contains the deployment.yml and service.yml files which are used to host the docker image onto a ecternal IP address
 2. Use the give commands to host the ChatBot on external servers after pulling the docker image 
-   -- kubectl apply -f deployment.yml
-   -- kubectl apply -f service.yml
-   -- kubectl get deploy -o wide
-   -- kubectl get pod -o wide
+- `kubectl apply -f deployment.yml`
+- `kubectl apply -f service.yml`
+- `kubectl get deploy -o wide`
+- `kubectl get pod -o wide`
+
   
    Use last two commands to get the external Ip address and port number where the docker image will be hosted
 
