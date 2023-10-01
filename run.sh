@@ -3,10 +3,10 @@
 #!/bin/bash
 
 # Build the Docker image
-docker build -t gita_chatbot .
+docker build -t gita_bot .
 
 # Run the Docker container
-docker run -d -p 8080:80 gita_chatbot
+docker run -p 8080:80 gita_bot
 
 # Display container information
 echo "Docker container for Gita ChatBot is running."

@@ -53,7 +53,7 @@ To host and run the Gita Bot using the Docker image, pull the repo and use the f
 
 -`docker run -p 8080:80 sushil3710/gita_bot:latest`
 
-Or Use bash script to build and run the docker repo after pulling it to local environment
+Or Use bash script to build  and run the docker repo after pulling it to local environment
 
 -`./run.sh  or bash run.sh` 
 
@@ -82,6 +82,14 @@ Use last two commands to get the external Ip address and port number where the d
 -`ctransformers`
 -`sentence_transformers`
 -`faiss_cpu`
+
+
+## Workings:
+
+<img src="./pics/pic1.png" width="280" height="400">
+<img src="./pics/pic2.png" width="280" height="400">
+
+
 
 ## License
 
