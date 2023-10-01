@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: chatbot-server-deployment
+  name: chatbot-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webserver
+      app: chatbot
   template:
     metadata:
       labels:
-        app: webserver
+        app: chatbot
     spec:
       containers:
-        - name: minikube
-          image: gitachatbot:v1
+        - name: chatbot-server-container-1
+          image: gita_bot
           ports:
-            - containerPort: 8051
+            - containerPort: 80
 
